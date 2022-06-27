@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+.Side{
+    background-color: beige;
+    width: 10vw;
+    
+}

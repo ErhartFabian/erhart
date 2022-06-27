@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+.About{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-left: 10%;
+    color: var(--alice-blue);
+    /* height: 100vh; */
+    font-family: 'Roboto Mono', monospace;
+    flex-wrap: wrap;
+   /*  background-color: #1F31D6; */
+}
+.About-info{
+    width: 50%;
+}
+ .About-top p{
+    text-align: justify;
+    margin-top: 3%;
+    font-size: 1.1em;
+    line-height: 150%;
+    width: 90%;    
+}
+
+.About-top a{
+    color: bisque;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+}
+.About-top a:hover{
+    text-decoration: underline;
+}
+
+.About-top ul{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 10px));
+    list-style: none;
+}  
+
+ul li::before {
+    content: "\2022";
+    color: bisque;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.3em;
+  }
+.About-top li{
+    padding-top: 10px;
+}
+.image{
+    padding-top: 2%;
+    margin-left: 10%;
+} 
