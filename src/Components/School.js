@@ -58,7 +58,7 @@ function School() {
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ duration: (i+1) * 0.7 }} 
+                                transition={{ duration: (i+1) * 1}} 
                                 viewport={{ once: true }}
                                 delay={`${i + 1}000ms`}
                             >
@@ -69,7 +69,7 @@ function School() {
                                         maxHeight: 945,
                                         backgroundColor: "white",
                                         color: "black",
-                                        boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 46%)",
+                                        boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 36%)",
                                         borderRadius: "10px",
                                         border: "none",
                                         marginLeft: "30px",
@@ -85,10 +85,10 @@ function School() {
                                             title="Contemplative Reptile"
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h6" fontSize={"15px"} fontFamily={"'Roboto Mono', monospace"} fontWeight={"300"} component="div">
+                                            <Typography gutterBottom variant="h6" fontSize={"19px"} component="div">
                                                 {school_item.mayor}
                                             </Typography>
-                                            <Typography fontSize={"15px"} fontFamily={"'Roboto Mono', monospace"} fontWeight={"400"} color="text.secondary">
+                                            <Typography   color="text.primary" >
                                                 {school_item.years}
                                             </Typography>
                                             <Typography variant="body2" color="#0A1047" paddingTop={"10px"}>
@@ -103,8 +103,15 @@ function School() {
                 </div>
                 {/* imprimir las certificaciones */}
                 <div className="School-top-right">
-                    {certifications.map(function (certification_item) {
+                    {certifications.map(function (certification_item,i) {
                         return (
+                            <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: (i+1) * 0.5 }} 
+                            viewport={{ once: true }}
+                            delay={`${i + 1}000ms`}
+                        >
                             <Card sx={{
                                 display: 'flex',
                                 maxWidth: 700,
@@ -112,7 +119,7 @@ function School() {
                                 marginTop: "35px",
                                 marginLeft: "30px",
                                 boxSizing: "border-box",
-                                boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 46%)",
+                                boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 36%)",
                                         borderRadius: "10px",
                                         border: "none",
                             }}>
@@ -135,6 +142,7 @@ function School() {
                                 </Box>
 
                             </Card>
+                        </motion.div>
                         )
                     })}
                 </div>
