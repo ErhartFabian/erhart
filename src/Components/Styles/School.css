@@ -17,7 +17,6 @@
     height: 100vh;
     font-family: 'Roboto Mono', monospace;
     flex-wrap: wrap;
-    /* background-color: rgb(18, 185, 190); */
 }
 .School-top{
     display: flex;
@@ -26,6 +25,11 @@
     
 }
 .School-top-left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.School-top-left-right{
     display: flex;
     justify-content: center;
     align-items: flex-start;

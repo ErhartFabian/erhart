@@ -47,7 +47,7 @@ function About() {
             </div>
             <div className="image">
                 <motion.div
-                    style={{ scale }}
+                    style={{ scale}}
                 >
                    <Avatar alt="Erhart"
                     sx={{
