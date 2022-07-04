@@ -47,7 +47,7 @@ function School() {
 
 
     return (
-        <div className="School">
+        <div id="School">
             <h1> -&gt; Education & Certifications</h1>
             <div className="School-top">
 

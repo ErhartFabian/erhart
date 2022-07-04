@@ -9,7 +9,7 @@ function Intro() {
 
 
     return (
-        <div className="Intro">
+        <div id="Intro">
 
             <div className="Intro-top">
                 <Typewriter
