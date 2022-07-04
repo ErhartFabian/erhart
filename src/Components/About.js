@@ -2,13 +2,10 @@ import React from "react";
 import './Styles/About.css';
 import FadeIn from 'react-fade-in';
 import Avatar from '@mui/material/Avatar';
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import profile from "../Assets/profile.jpg";
 
-function About() {
-    const { scrollYProgress } = useViewportScroll();
-    const scale = useTransform(scrollYProgress, [0, 1.3], [0.2, 1.2]);
-    
+function About() {  
     
 
     const technologies = [
@@ -21,7 +18,7 @@ function About() {
         "Git"
     ];
     return (
-        <div className="About" >
+        <div /* className="About" */ id="About" >
             <div className="About-info">
                 <h1> -&gt; About me</h1>
                 <div className="About-top">
@@ -47,13 +44,11 @@ function About() {
                 </div>
             </div>
             <div className="image">
-                <motion.div
-                    style={{ scale}}
-                >
+                <motion.div>
                 <Avatar alt="Erhart"
                 sx={{
                     width: 450,
-                    height: 450,
+                    height: 350,
                     borderRadius: "15px",
                 }}
                 variant="rounded"

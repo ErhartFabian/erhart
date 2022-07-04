@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
-.School{
+#School{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -14,9 +14,10 @@
     padding-top: 5%;
     padding-left: 10%;
     color: var(--alice-blue);
-    height: 100vh;
+    height: 70vh;
     font-family: 'Roboto Mono', monospace;
     flex-wrap: wrap;
+    background-color: #112240;
 }
 .School-top{
     display: flex;
