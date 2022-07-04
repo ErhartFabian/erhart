@@ -5,6 +5,8 @@ import Intro from "./Components/Intro";
 import About from './Components/About';
 import Side from './Components/Side';
 import School from './Components/School';
+import Experience from './Components/Experience';
+
 function App() {
 
   return (
@@ -13,6 +15,7 @@ function App() {
         <Intro></Intro>
         <About></About>
         <School></School>
+        <Experience></Experience>
       </div>
       <Side></Side>
     </div>
