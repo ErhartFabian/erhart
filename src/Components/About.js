@@ -3,11 +3,12 @@ import './Styles/About.css';
 import FadeIn from 'react-fade-in';
 import Avatar from '@mui/material/Avatar';
 import { motion, useViewportScroll, useTransform } from "framer-motion";
+import profile from "../Assets/profile.jpg";
 
 function About() {
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 1.3], [0.2, 1.2]);
-
+    
     
 
     const technologies = [
@@ -49,14 +50,17 @@ function About() {
                 <motion.div
                     style={{ scale}}
                 >
-                   <Avatar alt="Erhart"
-                    sx={{
-                        width: 450,
-                        height: 450,
-                        borderRadius: "15px",
-                    }}
-                    variant="rounded"
-                    src="https://scontent.fmex30-1.fna.fbcdn.net/v/t39.30808-6/279899993_10160067715567002_5457589522178300173_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFYpVlNyzL_-kGx-RAOTmUhCJn6aJoo2kUImfpomijaRXTB33tUD3gjRvT9X7NgfSOaFao0IeyyIT6BPwpQP6_f&_nc_ohc=bOQIJgD0eY8AX8_0Dbz&_nc_ht=scontent.fmex30-1.fna&oh=00_AT_eNnop7iEpxlOwVM7wlOvg9wzeJEHcmqZxBMXVG17a7Q&oe=62BBABDF" />
+                <Avatar alt="Erhart"
+                sx={{
+                    width: 450,
+                    height: 450,
+                    borderRadius: "15px",
+                }}
+                variant="rounded"
+                src={profile}        
+                
+                />
+                    
                 </motion.div>
                 
 
