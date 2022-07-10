@@ -2,11 +2,10 @@ import React from "react";
 import './Styles/About.css';
 import FadeIn from 'react-fade-in';
 import Avatar from '@mui/material/Avatar';
-import { motion } from "framer-motion";
 import profile from "../Assets/profile.jpg";
 
-function About() {  
-    
+function About() {
+
 
     const technologies = [
         "React.js",
@@ -18,7 +17,7 @@ function About() {
         "Git"
     ];
     return (
-        <div /* className="About" */ id="About" >
+        <div id="About" >
             <div className="About-info">
                 <h1> -&gt; About me</h1>
                 <div className="About-top">
@@ -43,24 +42,23 @@ function About() {
                     </p>
                 </div>
             </div>
-            <div className="image">
-                <motion.div>
-                <Avatar alt="Erhart"
+            <Avatar alt="Erhart"
                 sx={{
-                    width: 450,
-                    height: 350,
-                    borderRadius: "15px",
+                    borderRadius: "10px",
+                    '@media screen and (min-width: 1400px)': {
+                        width: "500px",
+                        height: "auto",
+                    },
+                    '@media screen and (max-width: 1024px)': {
+                        width: "300px",
+                        height: "auto",
+                    },
                 }}
                 variant="rounded"
-                src={profile}        
-                
-                />
-                    
-                </motion.div>
-                
+                src={profile}
 
+            />
 
-            </div>
 
         </div>
     );

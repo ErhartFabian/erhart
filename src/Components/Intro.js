@@ -26,7 +26,11 @@ function Intro() {
                     sx={{
                         width: 150,
                         height: 150,
-                        marginLeft: "10px"
+                        marginLeft: "10px",
+                        '@media screen and (max-width: 1024px)': {
+                            width: "120px",
+                            height: "auto",
+                        },
                     }}
                     src="https://media-exp2.licdn.com/dms/image/C5603AQH3J-SWKHdWeA/profile-displayphoto-shrink_800_800/0/1650680783161?e=1661385600&v=beta&t=ioMrVsWGdHkLlxsCh-1x9kljTGG2TOcuMmT_qqVpM1o" />
             </div>

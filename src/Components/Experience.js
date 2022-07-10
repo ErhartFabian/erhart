@@ -49,7 +49,7 @@ function Experience() {
                                 Tester Intern
                                 </Typography>
                                 <Typography variant="subtitle1" color="text.secondary" component="div">
-                                june 2022 - Present
+                                June 2022 - Present
                                 </Typography>
                                 <Typography variant="subtitle1" color="text.secondary" component="div">
                                 Training and coaching in the following technologies: <br/>Agile Methodologies <br/>ISTQB Methodology <br/> Java Core

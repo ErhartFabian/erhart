@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { motion } from "framer-motion";
 import Box from '@mui/material/Box';
+import certification from "../Assets/certification.png";
 
 
 function School() {
@@ -29,19 +30,22 @@ function School() {
 
     const certifications = [
         {
-            name: "Scrum Developer Certified (SDC) - SCRUMstudy",
-            image: "https://www.creativefabrica.com/wp-content/uploads/2019/03/Certificate-icon-by-ahlangraphic.jpg",
-            period: "2021 - 2024"
+            name: "Scrum Developer Certified (SDC)",
+            image: certification,
+            period: "2021 - 2024",
+            institution: "SCRUMstudy",
         },
         {
-            name: "ITIL V4 - PeopleCert",
-            image: "https://www.creativefabrica.com/wp-content/uploads/2019/03/Certificate-icon-by-ahlangraphic.jpg",
-            period: "2020 - NA"
+            name: "ITIL V4",
+            image: certification,
+            period: "2020 - NA",
+            institution: "PeopleCert",
         },
         {
-            name: "Six Sigma Yellow Belt - 6SIGMAstudy",
-            image: "https://www.creativefabrica.com/wp-content/uploads/2019/03/Certificate-icon-by-ahlangraphic.jpg",
-            period: "2022 - NA"
+            name: "Six Sigma Yellow Belt",
+            image: certification,
+            period: "2022 - NA",
+            institution: "6SIGMAstudy",
         }
     ]
 
@@ -50,7 +54,6 @@ function School() {
         <div id="School">
             <h1> -&gt; Education & Certifications</h1>
             <div className="School-top">
-
                 {/* imprimir los elementos del arreglo de objetos con la estructura de abajo */}
                 <div className="School-top-left">
                     {school.map(function (school_item, i) {
@@ -64,15 +67,16 @@ function School() {
                             >
                                 <Card
                                     sx={{
-                                        marginTop: "30px",
-                                        maxWidth: 270,
-                                        maxHeight: 945,
+                                        maxWidth: 250,
                                         backgroundColor: "white",
                                         color: "black",
                                         boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 36%)",
                                         borderRadius: "10px",
-                                        border: "none",
-                                        marginLeft: "30px",
+                                        gap: "40px",
+                                        '@media screen and (max-width: 1024px)': {
+                                            width: "300px",
+                                            height: "auto",
+                                        },
                                     }}
                                 >
                                     <CardActionArea>
@@ -92,7 +96,7 @@ function School() {
                                                 {school_item.years}
                                             </Typography>
                                             <Typography variant="body2" color="#0A1047" paddingTop={"10px"}>
-                                                <b>{school_item.institution}</b>
+                                                {school_item.institution}
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -111,30 +115,35 @@ function School() {
                             transition={{ duration: (i+1) * 0.5 }} 
                             viewport={{ once: true }}
                             delay={`${i + 1}000ms`}
+
                         >
-                            <Card sx={{
+                            <Card 
+                            sx={{
                                 display: 'flex',
-                                maxWidth: 700,
-                                maxHeight: 100,
-                                marginTop: "35px",
-                                marginLeft: "30px",
-                                boxSizing: "border-box",
+                                width: "100%",
                                 boxShadow: "6px 13px 23px -5px rgb(0 0 0 / 36%)",
-                                        borderRadius: "10px",
-                                        border: "none",
-                            }}>
+                                borderRadius: "10px",
+                                '@media screen and (max-width: 1024px)': {
+                                    width: "100% ",
+                                    height: "auto",
+                                },
+                            }}
+                            >
                                 <CardMedia
                                     component="img"
                                     sx={{ width: 110 }}
                                     image={certification_item.image}
-                                    alt="Live from space album cover"
+                                    alt="company"
                                 />
-                                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                                <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                                     <CardContent sx={{ flex: '1 0 auto' }}>
                                         <Typography component="div" variant="h5">
                                             {certification_item.name}
                                         </Typography>
-                                        <Typography variant="subtitle1" color="text.secondary" component="div">
+                                        <Typography component="div" variant="h7z">
+                                            certifying entity: {certification_item.institution}
+                                        </Typography>
+                                        <Typography variant="subtitle1" color="text.secondary" component="div"  >
                                             {certification_item.period}
                                         </Typography>
                                     </CardContent>
