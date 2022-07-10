@@ -16,7 +16,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;  
     display: flex;
 }
@@ -26,9 +26,46 @@
     flex-direction: column;
     padding-bottom: 15px;
     padding-right: 15px;
+    
 }
 
 a:link , a:visited{
     text-decoration: none;
     color: var(--prussian-blue) ;
+}
+
+@media screen and (min-width: 1400px) {
+    /* Dispositivos mayores que 1400px para las ultra width */
+
+    
+    }
+    
+@media screen and (max-width: 1024px) {
+/* Para laptops */ 
+.Side{
+    background-color: #E4DFDA;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    right:0;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: bold;  
+    display: flex;
+}
+}
+    
+    
+@media screen and (max-width: 768px) {
+/* Para tablets */ 
+
+}
+    
+    
+@media screen and (max-width: 480px) {
+/* Para smartphones */
+
 }

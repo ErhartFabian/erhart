@@ -14,8 +14,32 @@
     padding-top: 5%;
     padding-left: 10%;
     color: var(--prussian-blue);
-    height: 70vh;
+    /* height: 70vh; */
     font-family: 'Roboto Mono', monospace;
     flex-wrap: wrap;
     background-color: #CFDEE7;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1400px) {
+    /* Dispositivos mayores que 1400px para las ultra width */
+
+    
+    }
+    
+@media screen and (max-width: 1024px) {
+/* Para laptops */ 
+
+}
+    
+    
+@media screen and (max-width: 768px) {
+/* Para tablets */ 
+
+}
+    
+    
+@media screen and (max-width: 480px) {
+/* Para smartphones */
+
 }

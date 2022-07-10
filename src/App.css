@@ -15,3 +15,36 @@ html {
 #container {
   
 }
+
+@media screen and (min-width: 1400px) {
+  /* Dispositivos mayores que 1400px para las ultra width */
+
+  
+  }
+  
+@media screen and (max-width: 1024px) {
+/* Para laptops */ 
+.App {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80vw;
+
+}
+}
+  
+  
+@media screen and (max-width: 768px) {
+/* Para tablets */ 
+
+}
+  
+  
+@media screen and (max-width: 480px) {
+/* Para smartphones */
+
+}

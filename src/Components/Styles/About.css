@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -6,60 +6,123 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
-#About{
+#About {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding-top: 5%;
-    padding-left: 10%;
     color: var(--alice-blue);
-    height: 70vh;
     font-family: 'Roboto Mono', monospace;
-    flex-wrap: wrap;
     background-color: #52796F;
+    padding-bottom: 50px;
 }
-.About-info{
+
+.About-info {
     width: 50%;
 }
- .About-top p{
+.About-top{
+    padding-bottom: 20px;
+}
+.About-top p {
     text-align: justify;
     margin-top: 3%;
     font-size: 1.1em;
     line-height: 150%;
-    width: 90%;    
+    width: 90%;
 }
 
-.About-top a{
+.About-top a {
     color: bisque;
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
 }
-.About-top a:hover{
+
+.About-top a:hover {
     text-decoration: underline;
 }
 
-.About-top ul{
+.About-top ul {
     padding-top: 20px;
     padding-left: 20px;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 10px));
     list-style: none;
-}  
+}
 
 ul li::before {
     content: "\2022";
     color: bisque;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
     font-size: 1.3em;
-  }
-.About-top li{
+}
+
+.About-top li {
     padding-top: 10px;
 }
-.image{
+
+.image {
     padding-top: 2%;
     margin-left: 7%;
-} 
+}
+
+.image Avatar {
+    width: 450px;
+    height: 350px;
+}
+
+@media screen and (min-width: 1400px) {
+    /* Dispositivos mayores que 1400px para las ultra width */
+    Avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Para laptops */
+    #About {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5%;
+        color: var(--alice-blue);
+        font-family: 'Roboto Mono', monospace;
+        background-color: #52796F;
+        padding-bottom: 50px;
+        width: 80vw;
+    }
+
+    .About-top p {
+        text-align: justify;
+        margin-top: 3%;
+        font-size: 1.1em;
+        line-height: 150%;
+        width: 100%;
+    }
+
+    .About-top ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 10px));
+        list-style: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Para tablets */
+
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Para smartphones */
+
+}
