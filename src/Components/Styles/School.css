@@ -9,15 +9,16 @@
 #School{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    
+    padding-left: 30%;
+    justify-content: center;
     padding-top: 5%;
-    padding-left: 10%;
     color: var(--alice-blue);
-    height: 70vh;
     font-family: 'Roboto Mono', monospace;
     flex-wrap: wrap;
     background-color: #112240;
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 .School-top{
     display: flex;
@@ -29,9 +30,69 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 50%;
 }
-.School-top-left-right{
+.School-top-right{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    width: 50%;
+}
+.School-card{
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+    /* Dispositivos mayores que 1400px para las ultra width */
+
+    
+}
+    
+@media screen and (max-width: 1024px) {
+/* Para laptops */ 
+
+    #School{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--alice-blue);
+        width: 80vw;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .School-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .School-top-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .School-top-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+}
+
+    
+    
+@media screen and (max-width: 768px) {
+/* Para tablets */ 
+
+}
+    
+    
+@media screen and (max-width: 480px) {
+/* Para smartphones */
+
 }

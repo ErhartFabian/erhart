@@ -26,7 +26,11 @@ function Intro() {
                     sx={{
                         width: 150,
                         height: 150,
-                        marginLeft: "10px"
+                        marginLeft: "10px",
+                        '@media screen and (max-width: 1024px)': {
+                            width: "120px",
+                            height: "auto",
+                        },
                     }}
                     src="../Assets/profile.jpg" />
             </div>
